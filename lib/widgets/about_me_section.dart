@@ -18,7 +18,7 @@ class AboutMeSec extends StatelessWidget {
         ),
         ContentContainer(
             child: Text(
-          'A dedicated Flutter Developer with 1-2 years of hands-on experience in building cross-platform mobile applications. Proven ability to create high-performance,scalable applications and eager to leverage skills in a collaborative environment to develop innovative solutions.',
+          'A dedicated Flutter Developer with 1+ year of hands-on experience in building cross-platform mobile applications. Proven ability to create high-performance,scalable applications and eager to leverage skills in a collaborative environment to develop innovative solutions.',
           style: TextStyle(fontSize: 16),
         )),
       ],

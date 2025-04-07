@@ -13,49 +13,49 @@ class SkillsContainer extends StatelessWidget {
       children: [
         RowInSkillsContainer(
           title: 'Dart',
-          value: 0.85,
-        ),
-        SizedBox(
-          height: 8,
-        ),
-        RowInSkillsContainer(
-          title: 'Flutter',
           value: 0.9,
         ),
         SizedBox(
           height: 8,
         ),
         RowInSkillsContainer(
+          title: 'Flutter',
+          value: 0.95,
+        ),
+        SizedBox(
+          height: 8,
+        ),
+        RowInSkillsContainer(
           title: 'RESTful APIs',
-          value: 0.85,
+          value: 0.90,
         ),
         SizedBox(
           height: 8,
         ),
         RowInSkillsContainer(
           title: 'OOP',
-          value: 0.8,
+          value: 0.9,
         ),
         SizedBox(
           height: 8,
         ),
         RowInSkillsContainer(
           title: 'Firebase',
-          value: 0.7,
+          value: 0.80,
         ),
         SizedBox(
           height: 8,
         ),
         RowInSkillsContainer(
           title: 'Bloc & Cubit',
-          value: 0.8,
+          value: 0.90,
         ),
         SizedBox(
           height: 8,
         ),
         RowInSkillsContainer(
           title: 'Google Maps',
-          value: 0.8,
+          value: 0.85,
         ),
         SizedBox(
           height: 8,
@@ -69,7 +69,7 @@ class SkillsContainer extends StatelessWidget {
         ),
         RowInSkillsContainer(
           title: 'Git & GitHub',
-          value: 0.65,
+          value: 0.80,
         ),
       ],
     ));
@@ -110,6 +110,12 @@ class RowInSkillsContainer extends StatelessWidget {
             color: primaryColor, // Progress bar color
             minHeight: 12, // Height of the progress bar
           ),
+        ),
+        SizedBox(
+          width: 8,
+        ),
+        Text(
+          "${(value * 100)}%",
         ),
       ],
     );

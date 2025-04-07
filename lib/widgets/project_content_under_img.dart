@@ -38,7 +38,7 @@ class ProjectContentUnderImg extends StatelessWidget {
             children: [
               CustomButton(
                 textColor: Colors.black,
-                text: 'GitHub',
+                text: 'Demo',
                 backgroundColor: primaryColor,
                 onPressed: () {
                   launchCustomUr(context, projectContentModel.demo);

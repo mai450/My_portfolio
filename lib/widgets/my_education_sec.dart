@@ -20,7 +20,7 @@ class MyEducationSec extends StatelessWidget {
         ),
         CustomContainerWithDate(
           content:
-              'Faculty Of Computers And Informatics, Suez Canal University',
+              'Faculty of Computers and Informatics, Suez Canal University',
           data: '2020 - 2024',
         ),
       ],

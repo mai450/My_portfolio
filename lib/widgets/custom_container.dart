@@ -4,9 +4,11 @@ class CustomContainer extends StatelessWidget {
   const CustomContainer({
     super.key,
     required this.text,
+    this.fontSize = 16,
   });
 
   final String text;
+  final double fontSize;
   @override
   Widget build(BuildContext context) {
     return IntrinsicWidth(
@@ -17,7 +19,7 @@ class CustomContainer extends StatelessWidget {
         child: Center(
             child: Text(
           text,
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+          style: TextStyle(fontSize: fontSize, fontWeight: FontWeight.w600),
         )),
       ),
     );

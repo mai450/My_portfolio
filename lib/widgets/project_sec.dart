@@ -17,7 +17,7 @@ class ProjectsSec extends StatelessWidget {
         SizedBox(
           height: 12,
         ),
-        ContentContainer(child: ProjectsSliderInDesktop()),
+        ContentContainer(child: ProjectSlider2()),
       ],
     );
   }

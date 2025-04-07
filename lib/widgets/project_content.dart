@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/utils/colors.dart';
+import 'package:portfolio/core/utils/custom_button.dart';
 import 'package:portfolio/core/utils/functions/launch_url.dart';
 import 'package:portfolio/models/project_content.dart';
+import 'package:portfolio/widgets/content_container.dart';
 import 'package:portfolio/widgets/project_content_under_img.dart';
 import 'package:portfolio/widgets/project_img_container.dart';
 
@@ -77,5 +79,63 @@ class ProjectsContentInMobile extends StatelessWidget {
         ],
       ),
     );
+    // ContentContainer(
+    //     padding: EdgeInsets.zero,
+    //     margin: EdgeInsets.symmetric(vertical: 12),
+    //     child: IntrinsicHeight(
+    //       child: Row(
+    //         children: [
+    //           GestureDetector(
+    //             onTap: () {
+    //               launchCustomUr(context, projectContentModel.imageUrl);
+    //             },
+    //             child: Container(
+    //               width: MediaQuery.sizeOf(context).width > 650 ? 250 : 100,
+    //               //margin: EdgeInsets.only(right: 12),
+    //               decoration: BoxDecoration(
+    //                   borderRadius: BorderRadius.only(
+    //                     topLeft: Radius.circular(12),
+    //                     bottomLeft: Radius.circular(12),
+    //                   ),
+    //                   image: DecorationImage(
+    //                       image: AssetImage(
+    //                         projectContentModel.img,
+    //                       ),
+    //                       fit: BoxFit.fill)),
+    //             ),
+    //           ),
+    //           Expanded(
+    //             child: Padding(
+    //               padding: const EdgeInsets.all(18.0),
+    //               child: Column(
+    //                 crossAxisAlignment: CrossAxisAlignment.start,
+    //                 children: [
+    //                   Row(children: [
+    //                     Text(
+    //                       projectContentModel.title,
+    //                       style: TextStyle(
+    //                           fontSize: 16, fontWeight: FontWeight.w600),
+    //                     ),
+    //                     Spacer(),
+    //                     CustomButton(
+    //                       textColor: Colors.black,
+    //                       text: 'Demo',
+    //                       backgroundColor: primaryColor,
+    //                       onPressed: () {
+    //                         launchCustomUr(context, projectContentModel.demo);
+    //                       },
+    //                     ),
+    //                   ]),
+    //                   SizedBox(
+    //                     height: 12,
+    //                   ),
+    //                   Text(projectContentModel.desc),
+    //                 ],
+    //               ),
+    //             ),
+    //           ),
+    //         ],
+    //       ),
+    //     ));
   }
 }

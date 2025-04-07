@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/about_me_section.dart';
 import 'package:portfolio/widgets/custom_image.dart';
@@ -28,6 +29,7 @@ class _CustomDrawerState extends State<CustomDrawer>
         AnimationController(vsync: this, duration: Duration(seconds: 1))
           ..repeat(reverse: true);
     animation = Tween<double>(begin: -20, end: 0).animate(controller);
+
     WidgetsBinding.instance.addObserver(this);
   }
 
@@ -75,14 +77,29 @@ class _CustomDrawerState extends State<CustomDrawer>
             height: 12,
           ),
           Center(
-            child: Text(
-              "Hello, i'm Mai Awad",
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.w600,
-              ),
+            child: AnimatedTextKit(
+              repeatForever: true,
+              animatedTexts: [
+                TypewriterAnimatedText(
+                  "Hello, i'm Mai Awad",
+                  textStyle: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w600,
+                  ),
+                  speed: Duration(milliseconds: 100),
+                ),
+              ],
             ),
           ),
+          // Center(
+          //   child: Text(
+          //     "Hello, i'm Mai Awad",
+          //     style: TextStyle(
+          //       fontSize: 30,
+          //       fontWeight: FontWeight.w600,
+          //     ),
+          //   ),
+          // ),
           SizedBox(
             height: 24,
           ),
